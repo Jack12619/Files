@@ -21,9 +21,8 @@ clean_cache()
 # Part 2
 
 def cache_zip(zip_path, cache_path):
-    path = cache_path
     if zipfile.is_zipfile(zip_path):
-        zipfile.ZipFile(zip_path).extractall(path)#=cache_path)
+        zipfile.ZipFile(zip_path).extractall(cache_path)
     else:
         return "No zip-file"
 
